@@ -1,0 +1,53 @@
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Visual Studio / Visual Studio Code
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+*.tmp
+
+# Arquivos de build
+bin/
+obj/
+out/
+dist/
+build/
+
+# Arquivos de log
+*.log
+logs/
+
+# Arquivos de configuração local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependências
+node_modules/
+packages/
+
+# Arquivos temporários
+*.swp
+*.swo
+*~
+.tmp/
+temp/
+
+# Azure / Docker
+.azure/
+.docker/
+
+# IDE específicos
+*.code-workspace
+.idea/
+*.iml
+
+# Arquivos de backup
+*.bak
+*.backup

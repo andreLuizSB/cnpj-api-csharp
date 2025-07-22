@@ -1,0 +1,20 @@
+### Variáveis
+@baseUrl = http://localhost:5000
+
+### Health Check
+GET {{baseUrl}}/health
+
+### Consulta CNPJ válido - Banco do Brasil
+GET {{baseUrl}}/cnpj/00000000000191/razao-social
+
+### Consulta CNPJ válido - com formatação
+GET {{baseUrl}}/cnpj/11.222.333/0001-81/razao-social
+
+### Consulta CNPJ inválido - muito curto
+GET {{baseUrl}}/cnpj/123/razao-social
+
+### Consulta CNPJ inválido - caracteres especiais
+GET {{baseUrl}}/cnpj/abc123def456/razao-social
+
+### Consulta CNPJ não existente
+GET {{baseUrl}}/cnpj/99999999999999/razao-social

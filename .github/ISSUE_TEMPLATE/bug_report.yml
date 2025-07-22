@@ -1,0 +1,87 @@
+name: Bug Report
+description: Reporte um bug ou problema
+title: "[BUG] "
+labels: ["bug", "triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar este bug! Por favor, forneça o máximo de detalhes possível.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição do Bug
+      description: Uma descrição clara e concisa do bug
+      placeholder: Descreva o que está acontecendo...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Passos para Reproduzir
+      description: Como reproduzir o problema
+      placeholder: |
+        1. Faça uma requisição para '...'
+        2. Com os parâmetros '....'
+        3. Veja o erro
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento Esperado
+      description: O que você esperava que acontecesse
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento Atual
+      description: O que realmente está acontecendo
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs de Erro
+      description: Cole aqui qualquer log de erro relevante
+      render: text
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Ambiente
+      description: Onde o bug está ocorrendo?
+      options:
+        - Desenvolvimento local
+        - Docker
+        - Azure
+        - Outro (especificar nos comentários)
+    validations:
+      required: true
+
+  - type: input
+    id: dotnet-version
+    attributes:
+      label: Versão do .NET
+      description: Qual versão do .NET você está usando?
+      placeholder: "8.0.x"
+
+  - type: input
+    id: os
+    attributes:
+      label: Sistema Operacional
+      description: Qual SO você está usando?
+      placeholder: "Windows 11, Ubuntu 22.04, macOS 14, etc."
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações Adicionais
+      description: Qualquer outra informação que possa ser útil

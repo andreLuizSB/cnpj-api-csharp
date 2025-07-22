@@ -1,0 +1,32 @@
+# Arquivos gerados pelo sistema
+bin/
+obj/
+*.user
+*.suo
+*.cache
+
+# Arquivos do Visual Studio
+.vs/
+.vscode/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs/
+*.log
+
+# Arquivos temporários
+temp/
+tmp/
+
+# Dependências do Node (se existirem)
+node_modules/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,64 @@
+name: Feature Request
+description: Sugira uma nova funcionalidade
+title: "[FEATURE] "
+labels: ["enhancement", "triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por sugerir uma nova funcionalidade! 
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema que resolve
+      description: Descreva o problema que esta funcionalidade resolveria
+      placeholder: "Seria útil poder..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solução Proposta
+      description: Descreva a solução que você gostaria de ver
+      placeholder: "Eu gostaria que..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas Consideradas
+      description: Descreva outras soluções que você considerou
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Prioridade
+      description: Qual a prioridade desta funcionalidade?
+      options:
+        - Baixa
+        - Média
+        - Alta
+        - Crítica
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: implementation
+    attributes:
+      label: Implementação
+      description: Como você gostaria de contribuir?
+      options:
+        - label: Eu gostaria de implementar esta funcionalidade
+        - label: Eu posso ajudar com testes
+        - label: Eu posso ajudar com documentação
+        - label: Apenas sugestão (outros podem implementar)
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informações Adicionais
+      description: Qualquer outra informação relevante
