@@ -6,7 +6,7 @@ EXPOSE 8080
 # Usando a imagem SDK para build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["CnpjApi.csproj", "."]
+COPY ["./CnpjApi.csproj", "./"]
 RUN dotnet restore "./CnpjApi.csproj"
 COPY . .
 WORKDIR "/src/."
