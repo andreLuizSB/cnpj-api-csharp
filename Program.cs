@@ -154,4 +154,6 @@ app.MapGet("/health", () => Results.Ok(new { status = "OK", timestamp = DateTime
    .WithSummary("Verifica se a API está funcionando")
    .WithOpenApi();
 
+app.MapGet("/", () => "API CNPJ está no ar!");
+
 app.Run();
